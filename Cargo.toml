@@ -1,0 +1,20 @@
+[package]
+name = "json2toml"
+version = "0.1.0"
+edition = "2021"
+authors = ["AnmiTalIDev <anmitali198@gmail.com>"]
+license = "Apache-2.0"
+description = "A CLI utility to convert between JSON and TOML formats"
+repository = "https://github.com/anmitalidev/json2toml"
+homepage = "https://github.com/anmitalidev/json2toml"
+readme = "README.md"
+keywords = ["json", "toml", "converter", "cli"]
+categories = ["command-line-utilities", "encoding"]
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+anyhow = "1.0"
+colored = "2.0"
